@@ -215,7 +215,6 @@ function App() {
               </div>
             </div>
           </section>
-          <DisclaimerPopup />
           <Call />
           <ClientReviews />
           <FAQ />
