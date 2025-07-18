@@ -36,7 +36,8 @@ function App() {
           <Route path="/services/CivilLitigation" element={<CivilLitigation />} />
           <Route path="/PrivacyPolicy" element={<PrivacyPolicy />} />
           <Route path="/blog" element={<Blog />} />
-          <Route path="/blog/:slug" element={<BlogPost />} /> 
+          <Route path="/blog/:slug" element={<BlogPost />} />
+          
 
          
         </Routes>
