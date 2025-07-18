@@ -243,10 +243,7 @@ const blogData = {
     title: 'How to Choose the Right Lawyer',
     content: `<section class="py-16 bg-white min-h-screen">
   <div class="container mx-auto px-4 max-w-3xl">
-    <h1 class="text-3xl font-bold text-gray-900 mb-4">How to Choose the Right Lawyer</h1>
-    <p class="text-sm text-gray-500 mb-8">May 30, 2025</p>
-
-    <p class="text-lg text-gray-700 leading-relaxed mb-6">
+  <p class="text-lg text-gray-700 leading-relaxed mb-6">
       Selecting the right lawyer can make or break your legal journey. Whether you're dealing with a property dispute, criminal charges, divorce, or drafting a will, having the right legal expert by your side is critical. This guide walks you through essential steps to find the best legal professional suited to your needs.
     </p>
 
@@ -375,10 +372,8 @@ const blogData = {
   title: 'The Legality of Live-in Relationships in India: What You Need to Know in 2025',
   date: 'July 16, 2025',
   content: `
-<p><strong>Meta Description:</strong><br>
-Wondering if live-in relationships are legal in India? This 2025 guide explores the legal status, rights, and challenges of live-in couples under Indian law. Know your rights today!</p>
+<meta name="description" content="Wondering if live-in relationships are legal in India? This 2025 guide explores the legal status, rights, and challenges of live-in couples under Indian law. Know your rights today!" />
 
-<h3>Introduction</h3>
 <p>Live-in relationships are no longer taboo in urban India. As societal norms evolve, more couples are choosing to cohabit without getting married. However, many are still unsure about the legality of live-in relationships in India. Are such relationships recognized by law? What rights do partners have? Can they claim maintenance or property rights?</p>
 <p>In this comprehensive blog, we answer all these questions and more. If you're planning to enter into a live-in relationship in India or just want to know your legal rights, this guide is for you.</p>
 
