@@ -1,62 +1,55 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Menu, X, Scale, ChevronDown } from 'lucide-react';
+import FamilyLaw from './services/FamilyLaw';
+import CorporateLaw from './services/CorporateLaw';
+import CriminalDefense from './services/CriminalDefense';
+import CivilLitigation from './services/CivilLitigation';
 import { Link, useLocation } from 'react-router-dom';
+
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [openDropdown, setOpenDropdown] = useState<string | null>(null); // Track which dropdown is open
+  const [openDropdown, setOpenDropdown] = useState<string | null>(null);
   const location = useLocation();
-  
-  const dropdownRef = useRef<HTMLDivElement | null>(null); // Reference to the dropdown to detect clicks outside
+  const dropdownRef = useRef<HTMLDivElement | null>(null);
 
   const navigation = [
     { name: 'Home', href: '/' },
     { name: 'Practice Areas', href: '/Praticearea' },
-    { 
-      name: 'Services', 
+    {
+      name: 'Services',
       href: '/services',
       subItems: [
-        { name: 'Corporate Law', href: '/services/CorporateLaw' },
-        { name: 'Criminal Defense', href: '/services/CriminalDefense' },
-        { name: 'Family Law', href: '/services/FamilyLaw' },
-        { name: 'Civil Litigation', href: '/services/CivilLitigation' }
-      ]
+       { name: 'Corporate Law', href: '/services/corporate-law', component: CorporateLaw },
+       { name: 'Criminal Defense', href: '/services/criminal-defense', component: CriminalDefense },
+       { name: 'Family Law', href: '/services/family-law', component: FamilyLaw },
+       { name: 'Civil Litigation', href: '/services/civil-litigation', component: CivilLitigation },
+      ],
     },
-     { name: 'Blog', href: '/blog' },
-    { name: 'About Us', href: '/Aboutus' },
-    
-    { name: 'Contact us', href: '/Contactus' },
+    { name: 'Blog', href: '/blog' },
+    { name: 'About Us', href: '/about-us' },
+    { name: 'Contact us', href: '/contact-us' },
   ];
 
   const isActive = (path: string) => location.pathname === path;
 
-  // Close dropdown when clicking outside
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
       if (dropdownRef.current && !dropdownRef.current.contains(event.target as Node)) {
-        setOpenDropdown(null); // Close dropdown if clicked outside
+        setOpenDropdown(null);
       }
     };
-    
-    document.addEventListener('mousedown', handleClickOutside);
 
-    return () => {
-      document.removeEventListener('mousedown', handleClickOutside);
-    };
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => document.removeEventListener('mousedown', handleClickOutside);
   }, []);
 
-  // Handle dropdown toggle
   const handleDropdownToggle = (itemName: string) => {
-    if (openDropdown === itemName) {
-      setOpenDropdown(null); // Close if already open
-    } else {
-      setOpenDropdown(itemName); // Open the clicked dropdown
-    }
+    setOpenDropdown((prev) => (prev === itemName ? null : itemName));
   };
 
-  // Handle item selection (closes dropdown)
   const handleItemClick = () => {
-    setOpenDropdown(null); // Close dropdown when an item is selected
+    setOpenDropdown(null);
   };
 
   return (
@@ -72,34 +65,44 @@ const Header = () => {
           </div>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex space-x-8">
+          <div className="hidden md:flex space-x-8 items-center">
             {navigation.map((item) => (
               <div key={item.name} className="relative group">
                 {item.subItems ? (
                   <div
                     className="flex items-center cursor-pointer text-gray-700 hover:text-blue-700"
-                    onClick={() => handleDropdownToggle(item.name)} // Toggle specific dropdown
+                    onClick={() => handleDropdownToggle(item.name)}
                   >
                     {item.name}
-                    <ChevronDown className="ml-1 h-4 w-4" />
+                    <ChevronDown
+                      className={`ml-1 h-4 w-4 transition-transform ${
+                        openDropdown === item.name ? 'rotate-180' : ''
+                      }`}
+                    />
                   </div>
                 ) : (
                   <Link
                     to={item.href}
-                    className={`font-medium transition duration-300 ${isActive(item.href) ? 'text-blue-700' : 'text-gray-700 hover:text-blue-700'}`}
+                    className={`font-medium transition duration-300 ${
+                      isActive(item.href) ? 'text-blue-700' : 'text-gray-700 hover:text-blue-700'
+                    }`}
                   >
                     {item.name}
                   </Link>
                 )}
 
+                {/* Desktop Dropdown */}
                 {item.subItems && openDropdown === item.name && (
-                  <div ref={dropdownRef} className="absolute z-10 mt-2 bg-white shadow-lg rounded-md border border-gray-200 py-2 w-48">
+                  <div
+                    ref={dropdownRef}
+                    className="absolute z-10 mt-2 bg-white shadow-lg rounded-md border border-gray-200 py-2 w-48"
+                  >
                     {item.subItems.map((subItem) => (
                       <Link
                         key={subItem.name}
                         to={subItem.href}
                         className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
-                        onClick={handleItemClick} // Close dropdown after item selection
+                        onClick={handleItemClick}
                       >
                         {subItem.name}
                       </Link>
@@ -110,7 +113,7 @@ const Header = () => {
             ))}
           </div>
 
-          {/* Mobile menu button */}
+          {/* Mobile menu toggle button */}
           <div className="md:hidden">
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
@@ -127,35 +130,46 @@ const Header = () => {
             {navigation.map((item) => (
               <div key={item.name}>
                 {item.subItems ? (
-                  <div
-                    className="block py-2 font-medium text-gray-700 cursor-pointer"
-                    onClick={() => handleDropdownToggle(item.name)} // Toggle specific dropdown
-                  >
-                    {item.name}
-                    <ChevronDown className="inline-block ml-2 h-4 w-4" />
+                  <div>
+                    <div
+                      className="flex items-center justify-between py-2 font-medium text-gray-700 cursor-pointer"
+                      onClick={() => handleDropdownToggle(item.name)}
+                    >
+                      {item.name}
+                      <ChevronDown
+                        className={`ml-2 h-4 w-4 transition-transform ${
+                          openDropdown === item.name ? 'rotate-180' : ''
+                        }`}
+                      />
+                    </div>
+                    {openDropdown === item.name && (
+                      <div className="pl-4">
+                        {item.subItems.map((subItem) => (
+                          <Link
+                            key={subItem.name}
+                            to={subItem.href}
+                            className="block py-2 text-gray-600 hover:text-blue-700"
+                            onClick={() => {
+                              handleItemClick();
+                              setIsMenuOpen(false); // Close mobile menu after selection
+                            }}
+                          >
+                            {subItem.name}
+                          </Link>
+                        ))}
+                      </div>
+                    )}
                   </div>
                 ) : (
                   <Link
                     to={item.href}
-                    className={`block py-2 font-medium ${isActive(item.href) ? 'text-blue-700' : 'text-gray-700 hover:text-blue-700'}`}
+                    className={`block py-2 font-medium ${
+                      isActive(item.href) ? 'text-blue-700' : 'text-gray-700 hover:text-blue-700'
+                    }`}
+                    onClick={() => setIsMenuOpen(false)}
                   >
                     {item.name}
                   </Link>
-                )}
-
-                {item.subItems && openDropdown === item.name && (
-                  <div className="pl-4">
-                    {item.subItems.map((subItem) => (
-                      <Link
-                        key={subItem.name}
-                        to={subItem.href}
-                        className="block py-2 text-gray-600 hover:text-blue-700"
-                        onClick={handleItemClick} // Close dropdown after item selection
-                      >
-                        {subItem.name}
-                      </Link>
-                    ))}
-                  </div>
                 )}
               </div>
             ))}

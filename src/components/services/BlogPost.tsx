@@ -2,6 +2,292 @@ import React from 'react';
 import { useParams } from 'react-router-dom';
 
 const blogData = {
+
+  'corporate-lawyer-near-me-delhi-noida': {
+  title: 'Corporate Lawyer in Delhi | Advocate Ruby Kumari',
+  content: `
+    <section class="py-10 px-6 max-w-5xl mx-auto text-gray-800">
+      <h1 class="text-3xl font-bold mb-4">Best Corporate Lawyer in Delhi - Advocate Ruby Kumari</h1>
+
+      <p class="text-lg mb-4">
+        In the rapidly evolving business landscape of Delhi, legal compliance and corporate governance are vital for any company's success. I, <strong>Advocate Ruby Kumari</strong>, am a dedicated <strong>Corporate Lawyer in Delhi</strong>, providing strategic legal solutions tailored to the needs of businesses of all sizes, from startups to multinational corporations.
+      </p>
+
+      <h2 class="text-2xl font-semibold mt-8 mb-4">Why Hire a Corporate Lawyer?</h2>
+      <p class="mb-4">
+        A corporate lawyer helps businesses navigate the complex web of regulations, ensuring that operations remain legally sound and risks are mitigated. Whether it's setting up a new company, handling mergers, or drafting airtight contracts, corporate lawyers play a pivotal role in ensuring legal certainty in commercial dealings.
+      </p>
+
+      <h2 class="text-2xl font-semibold mt-8 mb-4">Services Offered by Advocate Ruby Kumari</h2>
+      <ul class="list-disc pl-6 mb-4">
+        <li>Company Incorporation and Structuring</li>
+        <li>Contract Drafting, Review, and Negotiation</li>
+        <li>Corporate Governance and Compliance</li>
+        <li>Shareholder Agreements</li>
+        <li>Mergers & Acquisitions</li>
+        <li>Intellectual Property Protection</li>
+        <li>Labour and Employment Law Compliance</li>
+        <li>Dispute Resolution & Arbitration</li>
+      </ul>
+
+      <h2 class="text-2xl font-semibold mt-8 mb-4">Key Legal Aspects of Corporate Law in India</h2>
+      <ul class="list-disc pl-6 mb-4">
+        <li><strong>Companies Act, 2013:</strong> Governs company formation, responsibilities, and compliance norms.</li>
+        <li><strong>SEBI Regulations:</strong> For publicly listed companies, ensuring transparency and investor protection.</li>
+        <li><strong>Contract Act, 1872:</strong> Framework for legally enforceable agreements and contracts.</li>
+        <li><strong>Intellectual Property Laws:</strong> Safeguard your innovations and trademarks.</li>
+        <li><strong>Employment Laws:</strong> Ensuring companies comply with employee rights and benefits.</li>
+      </ul>
+
+      <h2 class="text-2xl font-semibold mt-8 mb-4">Benefits of Working with Advocate Ruby Kumari</h2>
+      <ul class="list-disc pl-6 mb-4">
+        <li>Over a decade of experience in corporate and commercial law</li>
+        <li>Tailored legal advice to support business growth</li>
+        <li>Expertise in both litigation and preventive legal strategies</li>
+        <li>Client-centric approach with a focus on results</li>
+        <li>Availability for consultation in Delhi NCR</li>
+      </ul>
+
+      <h2 class="text-2xl font-semibold mt-8 mb-4">Common Corporate Legal Issues Handled</h2>
+      <ul class="list-disc pl-6 mb-4">
+        <li>Regulatory Non-compliance</li>
+        <li>Shareholder Disputes</li>
+        <li>Intellectual Property Infringement</li>
+        <li>Employment Disputes</li>
+        <li>Commercial Contract Disputes</li>
+      </ul>
+
+      <h2 class="text-2xl font-semibold mt-8 mb-4">Corporate Governance Support</h2>
+      <p class="mb-4">
+        Good corporate governance is not just about legal compliance but about building credibility and trust with stakeholders. I assist clients in setting up governance policies, ethics codes, and board advisory services that align with legal standards and best practices.
+      </p>
+
+      <h2 class="text-2xl font-semibold mt-8 mb-4">Why Delhi is a Hub for Corporate Legal Services</h2>
+      <p class="mb-4">
+        Delhi is India's capital and a crucial commercial hub, home to many corporate headquarters, regulatory bodies, and courts, making it a strategic location for resolving corporate legal matters efficiently.
+      </p>
+
+      <h2 class="text-2xl font-semibold mt-8 mb-4">Contact Advocate Ruby Kumari</h2>
+      <p class="mb-4">
+        If you are looking for a <strong>Corporate Lawyer in Delhi</strong> who combines legal expertise with business acumen, <strong>Advocate Ruby Kumari</strong> is here to help. I offer comprehensive legal services to ensure your business remains compliant, competitive, and protected.
+      </p>
+
+      <p class="font-medium">
+        <a href="/contact-us" class="text-blue-600 underline">Contact me today</a> for expert legal consultation tailored to your corporate needs.
+      </p>
+    </section>
+  `,
+},
+  
+  'divorce-lawyers-near-me-delhi-noida': {
+    title: 'Find the Best Divorce Lawyers Near You in Delhi & Noida | Advocate Ruby Kumari',
+    content: `
+      <section class="py-10 px-6 max-w-5xl mx-auto text-gray-800">
+        <h1 class="text-3xl font-bold mb-4">Divorce Lawyers Near Me in Delhi & Noida - Your Guide to Legal Separation</h1>
+
+        <p class="text-lg mb-4">
+          Navigating through a divorce can be one of the most emotionally and legally challenging experiences in life. Whether it's a mutual consent divorce or a contested one, having an experienced divorce lawyer by your side is crucial to protect your rights and secure a fair outcome. If you are in Delhi or Noida and searching for "divorce lawyers near me," this guide will provide you with all the information you need.
+        </p>
+
+        <h2 class="text-2xl font-semibold mt-8 mb-4">Why You Need a Divorce Lawyer</h2>
+        <p class="mb-4">
+          A divorce lawyer plays a pivotal role in helping you understand the complex legal procedures involved in ending a marriage. From filing petitions to negotiating settlements and representing you in court, a competent lawyer ensures that your interests are safeguarded at every step.
+        </p>
+
+        <ul class="list-disc pl-6 mb-4">
+          <li>Expertise in family law and divorce proceedings.</li>
+          <li>Legal advice on alimony, child custody, property division, and maintenance.</li>
+          <li>Assistance in documentation, court appearances, and mediation.</li>
+          <li>Ensuring compliance with legal timelines and procedures.</li>
+        </ul>
+
+        <h2 class="text-2xl font-semibold mt-8 mb-4">Types of Divorce in India</h2>
+        <p class="mb-4">
+          Divorce in India is governed by various personal laws based on religion, such as the Hindu Marriage Act, Muslim Personal Law, Christian Marriage Act, and the Special Marriage Act for inter-faith couples.
+        </p>
+
+        <h3 class="text-xl font-medium mt-6 mb-2">1. Mutual Consent Divorce</h3>
+        <p class="mb-4">
+          Both parties agree to separate amicably. It is faster and less stressful, typically finalized within 6 months to 1 year.
+        </p>
+
+        <h3 class="text-xl font-medium mt-6 mb-2">2. Contested Divorce</h3>
+        <p class="mb-4">
+          One party files for divorce on specific grounds such as cruelty, adultery, desertion, mental illness, or conversion of religion. This process can take longer and requires strong legal representation.
+        </p>
+
+        <h2 class="text-2xl font-semibold mt-8 mb-4">Common Grounds for Divorce in India</h2>
+        <ul class="list-disc pl-6 mb-4">
+          <li>Cruelty - Physical or mental abuse by the spouse.</li>
+          <li>Adultery - Extra-marital affairs.</li>
+          <li>Desertion - Abandonment without reasonable cause for over 2 years.</li>
+          <li>Mental Disorders - Insanity or severe psychological disorders.</li>
+          <li>Conversion - Change of religion by either spouse.</li>
+          <li>Renunciation of the world - Becoming a monk or nun.</li>
+          <li>Irretrievable Breakdown of Marriage (under Supreme Court jurisdiction).</li>
+        </ul>
+
+        <h2 class="text-2xl font-semibold mt-8 mb-4">Key Legal Aspects Handled by Divorce Lawyers</h2>
+        <ol class="list-decimal pl-6 mb-4">
+          <li>Preparation and filing of divorce petitions.</li>
+          <li>Representation in family courts in Delhi, Noida, and NCR.</li>
+          <li>Negotiation for alimony and spousal support.</li>
+          <li>Child custody and visitation rights arrangements.</li>
+          <li>Property and asset division under applicable laws.</li>
+          <li>Drafting and executing settlement agreements.</li>
+        </ol>
+
+        <h2 class="text-2xl font-semibold mt-8 mb-4">Alimony & Maintenance</h2>
+        <p class="mb-4">
+          The financial support granted to a spouse after separation is termed alimony. Factors determining alimony include:
+        </p>
+        <ul class="list-disc pl-6 mb-4">
+          <li>Length of the marriage.</li>
+          <li>Income and earning capacity of both spouses.</li>
+          <li>Standard of living maintained during the marriage.</li>
+          <li>Responsibilities such as child care.</li>
+        </ul>
+
+        <h2 class="text-2xl font-semibold mt-8 mb-4">Child Custody & Guardianship</h2>
+        <p class="mb-4">
+          In divorce cases involving children, courts prioritize the welfare of the child while deciding custody. Types of custody include:
+        </p>
+        <ul class="list-disc pl-6 mb-4">
+          <li><strong>Physical Custody:</strong> The child lives with one parent.</li>
+          <li><strong>Joint Custody:</strong> Both parents share custodial rights.</li>
+          <li><strong>Legal Custody:</strong> Decision-making rights about the child’s education, health, and welfare.</li>
+        </ul>
+
+        <h2 class="text-2xl font-semibold mt-8 mb-4">How to Choose the Best Divorce Lawyer in Delhi & Noida</h2>
+        <p class="mb-4">Consider the following when hiring a lawyer:</p>
+        <ul class="list-disc pl-6 mb-4">
+          <li>Experience and specialization in family and divorce law.</li>
+          <li>Successful track record of handling similar cases.</li>
+          <li>Clear communication and empathetic approach.</li>
+          <li>Fee structure and transparency in charges.</li>
+          <li>Availability for consultations and court proceedings.</li>
+        </ul>
+
+        <h2 class="text-2xl font-semibold mt-8 mb-4">Why Hire Advocate Ruby Kumari</h2>
+        <p class="mb-4">
+          As a seasoned divorce lawyer practicing in Delhi & Noida, I, Advocate Ruby Kumari, provide expert guidance on all aspects of family law including:
+        </p>
+        <ul class="list-disc pl-6 mb-4">
+          <li>Mutual Consent and Contested Divorce cases.</li>
+          <li>Child custody disputes and parenting arrangements.</li>
+          <li>Alimony and property division claims.</li>
+          <li>Representation in Family Courts in Delhi and Noida.</li>
+          <li>Personalized strategies tailored to your situation.</li>
+        </ul>
+
+        <h2 class="text-2xl font-semibold mt-8 mb-4">Frequently Asked Questions (FAQs)</h2>
+        <h3 class="text-xl font-medium mt-6 mb-2">Q1. How long does a divorce take in India?</h3>
+        <p class="mb-4">A mutual divorce may take around 6 months to a year, while contested divorces can last 2-5 years depending on complexities.</p>
+
+        <h3 class="text-xl font-medium mt-6 mb-2">Q2. Is alimony mandatory?</h3>
+        <p class="mb-4">Alimony is not mandatory but is awarded based on the financial needs of the spouse and the facts of the case.</p>
+
+        <h3 class="text-xl font-medium mt-6 mb-2">Q3. Can I get custody of my child?</h3>
+        <p class="mb-4">Yes, child custody is determined based on the child’s welfare, and either parent can seek custody through court proceedings.</p>
+
+        <h3 class="text-xl font-medium mt-6 mb-2">Q4. Do I need to appear in court for mutual consent divorce?</h3>
+        <p class="mb-4">Yes, both spouses are generally required to appear for statements and confirmation before the court finalizes the decree.</p>
+
+        <h2 class="text-2xl font-semibold mt-8 mb-4">Conclusion</h2>
+        <p class="mb-4">
+          Hiring a skilled divorce lawyer in Delhi or Noida can make a significant difference in the outcome of your case. Advocate Ruby Kumari offers compassionate yet firm legal support to help clients navigate the intricacies of divorce with dignity and confidence.
+        </p>
+
+        <p class="mb-4 font-medium">
+          If you're searching for the best divorce lawyers near me in Delhi or Noida, reach out today for a confidential consultation and let us help you through this difficult phase.
+        </p>
+        <h2 class="text-2xl font-semibold mt-10 mb-4">Contact Us</h2>
+      <p>Need help finding a lawyer near you?<br>
+      📞 Call: +91-8210196040<br>
+      📧 Email: info@advrubygupta.in<br>
+      🕘 Timings: Mon–Sat, 9:00 AM – 7:00 PM</p>
+      </section> `
+  },
+  'lawyers-near-me-delhi-noida': {
+    title: 'Find the Best Lawyers Near Me in Delhi & Noida',
+    content: `
+      <section class="py-10 px-6 max-w-5xl mx-auto text-gray-800">
+        <h1 class="text-3xl font-bold mb-4">Top Lawyers Near Me in Delhi & Noida (2025)</h1>
+
+        <p class="text-lg mb-4">
+          As an experienced advocate, I, Ruby Kumari, understand the complexities of the legal landscape in Delhi and Noida. Whether you require legal support for property disputes, criminal cases, family matters, or corporate affairs, finding the right lawyer is crucial. This comprehensive guide will help you navigate your search for the best legal professionals near you.
+        </p>
+
+        <h2 class="text-2xl font-semibold mt-8 mb-2">1. Why Choose Lawyers in Delhi & Noida?</h2>
+        <p class="mb-4">
+          The National Capital Region (NCR), comprising Delhi and Noida, houses some of India's most reputed courts including the Supreme Court, Delhi High Court, and various district courts. Legal practitioners here possess exposure to diverse cases, updated knowledge of new laws, and robust networks within the judiciary.
+        </p>
+
+        <h2 class="text-2xl font-semibold mt-8 mb-2">2. Key Legal Services Available</h2>
+        <ul class="list-disc pl-6 mb-4">
+          <li><strong>Property & Real Estate Law:</strong> Title verification, property disputes, RERA compliance, builder fraud.</li>
+          <li><strong>Criminal Law:</strong> Representation in criminal trials, bail matters, cybercrime, and financial fraud.</li>
+          <li><strong>Family Law:</strong> Divorce, child custody, alimony, domestic violence cases.</li>
+          <li><strong>Corporate & Business Law:</strong> Contract drafting, company incorporation, mergers, and compliance advisory.</li>
+          <li><strong>Labour & Employment Law:</strong> Employee disputes, wrongful termination, compensation claims.</li>
+          <li><strong>Intellectual Property Law:</strong> Trademark registration, copyright issues, patent filing.</li>
+        </ul>
+
+        <h2 class="text-2xl font-semibold mt-8 mb-2">3. How to Choose the Right Lawyer</h2>
+        <ul class="list-disc pl-6 mb-4">
+          <li>Check the lawyer's <strong>area of specialization</strong>.</li>
+          <li>Review their <strong>years of experience</strong> and previous case outcomes.</li>
+          <li>Seek recommendations from <strong>trusted friends or online reviews</strong>.</li>
+          <li>Verify if they are <strong>registered with Bar Councils</strong> of Delhi or Uttar Pradesh.</li>
+          <li>Discuss <strong>fees and payment structures</strong> upfront.</li>
+        </ul>
+
+        <h2 class="text-2xl font-semibold mt-8 mb-2">4. Top Courts in Delhi & Noida</h2>
+        <ul class="list-disc pl-6 mb-4">
+          <li>Supreme Court of India - Delhi</li>
+          <li>Delhi High Court</li>
+          <li>District Courts at Tis Hazari, Saket, Patiala House, Karkardooma</li>
+          <li>District & Sessions Court, Gautam Buddha Nagar (Noida)</li>
+        </ul>
+
+        <h2 class="text-2xl font-semibold mt-8 mb-2">5. Importance of Local Knowledge</h2>
+        <p class="mb-4">
+          Hiring a local lawyer in Delhi or Noida ensures they are familiar with state-specific laws, local court procedures, and administrative practices. This improves case handling efficiency and increases the chances of favorable outcomes.
+        </p>
+
+        <h2 class="text-2xl font-semibold mt-8 mb-2">6. Common Legal Issues in Delhi & Noida</h2>
+        <ul class="list-disc pl-6 mb-4">
+          <li>Builder delays in property handover</li>
+          <li>Land disputes and unauthorized constructions</li>
+          <li>Cybercrime and data breaches</li>
+          <li>Domestic violence and matrimonial conflicts</li>
+          <li>Employment disputes in IT and corporate sectors</li>
+        </ul>
+
+        <h2 class="text-2xl font-semibold mt-8 mb-2">7. Why Choose Advocate Ruby Kumari</h2>
+        <p class="mb-4">
+          With over 3 years of legal experience, I specialize in property law, family disputes, and civil litigation. Based in Delhi, I offer personalized consultation, case analysis, and strategic legal solutions tailored to individual needs.
+        </p>
+
+        <h2 class="text-2xl font-semibold mt-8 mb-2">8. How to Contact</h2>
+        <p class="mb-4">
+          Reach out via phone at <strong>+91 82101 96040</strong> or email at <strong>info@advrubygupta.in</strong> to book consultations or discuss legal queries.
+        </p>
+
+        <h2 class="text-2xl font-semibold mt-8 mb-2">9. Final Thoughts</h2>
+        <p class="mb-4">
+          Whether you are in Delhi or Noida, finding the right legal counsel can simplify complex situations and ensure your rights are protected. Always consult a qualified and experienced lawyer to navigate the Indian legal system effectively.
+        </p>
+
+        <p class="font-medium">Advocate Ruby Kumari - Your Trusted Legal Partner in Delhi & Noida</p>
+         <h2 class="text-2xl font-semibold mt-10 mb-4">Contact Us</h2>
+      <p>Need help finding a lawyer near you?<br>
+      📞 Call: +91-8210196040<br>
+      📧 Email: info@advrubygupta.in<br>
+      🕘 Timings: Mon–Sat, 9:00 AM – 7:00 PM</p>
+      </section>
+    `,
+  },
   'understanding-property-law-in-india': {
     title: 'Understanding Property Law in India',
     content: `<section class="py-10 px-6 max-w-5xl mx-auto text-gray-800">
@@ -500,6 +786,155 @@ const blogData = {
 </ul>
   `,
 },
+
+'lawyers-in-delhi': {
+  title: 'Lawyers in Delhi',
+  date:'July 10,2025',
+  content: `
+    <section class="py-10 px-6 max-w-5xl mx-auto text-gray-800">
+      <h1 class="text-3xl font-bold mb-6">Find Trusted & Experienced Lawyers in Delhi</h1>
+
+      <p>Are you searching for lawyers near you in Delhi who are experienced, dependable, and offer expert legal advice? Whether you're dealing with a family dispute, criminal charges, property issues, or corporate litigation, finding the right legal representation is crucial to protect your rights and achieve the best possible outcome. This page will guide you through the different types of legal services available in Delhi and help you connect with the most competent professionals based on your specific needs.</p>
+
+      <h2 class="text-2xl font-semibold mt-8 mb-4">Why Choose a Lawyer in Delhi?</h2>
+      <p>Delhi, the capital city of India, is home to some of the most skilled and reputable lawyers and legal firms in the country. From the Supreme Court of India to the Delhi High Court and numerous district courts, the city has a robust legal framework with a wide variety of legal professionals offering services in multiple areas of law.</p>
+      <p>Hiring a lawyer in Delhi means having access to legal experts who are familiar with local regulations, court procedures, and specific regional legal challenges. Whether you reside in South Delhi, North Delhi, Central Delhi, Noida, Gurugram, or Dwarka, there's a legal expert near you ready to help.</p>
+
+      <h2 class="text-2xl font-semibold mt-10 mb-4">Types of Legal Services Offered in Delhi</h2>
+
+      <h3 class="text-xl font-bold mt-6 mb-2">1. Criminal Law</h3>
+      <ul class="list-disc pl-6 space-y-1">
+        <li>Theft or robbery</li>
+        <li>Fraud or cheating</li>
+        <li>Cybercrime</li>
+        <li>Assault or domestic violence</li>
+        <li>Drug-related offences</li>
+        <li>Bail and anticipatory bail matters</li>
+        <li>White-collar crimes</li>
+        <li>FIR quashing and police complaints</li>
+      </ul>
+
+      <h3 class="text-xl font-bold mt-6 mb-2">2. Divorce & Family Law</h3>
+      <ul class="list-disc pl-6 space-y-1">
+        <li>Mutual consent divorce</li>
+        <li>Contested divorce proceedings</li>
+        <li>Maintenance and alimony claims</li>
+        <li>Child custody and visitation rights</li>
+        <li>Domestic violence cases</li>
+        <li>Dowry harassment (498A cases)</li>
+        <li>Separation agreements</li>
+        <li>Restitution of conjugal rights</li>
+      </ul>
+
+      <h3 class="text-xl font-bold mt-6 mb-2">3. Property & Real Estate Disputes</h3>
+      <ul class="list-disc pl-6 space-y-1">
+        <li>Title verification and property documentation</li>
+        <li>Partition suits</li>
+        <li>Succession certificate</li>
+        <li>Builder-buyer disputes</li>
+        <li>Landlord-tenant disputes</li>
+        <li>RERA complaints</li>
+      </ul>
+
+      <h3 class="text-xl font-bold mt-6 mb-2">4. Civil Litigation</h3>
+      <ul class="list-disc pl-6 space-y-1">
+        <li>Consumer forum cases</li>
+        <li>Debt recovery and cheque bounce matters</li>
+        <li>Injunctions and legal notices</li>
+        <li>Breach of contract disputes</li>
+        <li>Real estate and tenancy cases</li>
+      </ul>
+
+      <h3 class="text-xl font-bold mt-6 mb-2">5. Corporate & Commercial Law</h3>
+      <ul class="list-disc pl-6 space-y-1">
+        <li>Company incorporation and registration</li>
+        <li>Mergers & acquisitions</li>
+        <li>Drafting shareholder agreements</li>
+        <li>Employment law and HR compliance</li>
+        <li>Business dispute resolution</li>
+        <li>Legal due diligence</li>
+        <li>GST, taxation, and SEBI matters</li>
+      </ul>
+
+      <h3 class="text-xl font-bold mt-6 mb-2">6. Cyber Law & Technology Disputes</h3>
+      <ul class="list-disc pl-6 space-y-1">
+        <li>Filing cybercrime complaints</li>
+        <li>Representing tech companies in IT-related disputes</li>
+        <li>Drafting IT contracts and privacy policies</li>
+        <li>Protection against online stalking and blackmail</li>
+      </ul>
+
+      <h3 class="text-xl font-bold mt-6 mb-2">7. Intellectual Property Rights (IPR)</h3>
+      <ul class="list-disc pl-6 space-y-1">
+        <li>Trademark registration and opposition</li>
+        <li>Copyright and patent filings</li>
+        <li>IP litigation</li>
+        <li>Trade secret protection</li>
+        <li>Licensing agreements</li>
+      </ul>
+
+      <h3 class="text-xl font-bold mt-6 mb-2">8. Labour & Employment Law</h3>
+      <ul class="list-disc pl-6 space-y-1">
+        <li>Wrongful termination and severance disputes</li>
+        <li>Drafting employment agreements</li>
+        <li>Provident Fund (PF), ESIC, and bonus claims</li>
+        <li>Labour court representation</li>
+        <li>Workplace harassment cases</li>
+      </ul>
+
+      <h3 class="text-xl font-bold mt-6 mb-2">9. Wills, Probate & Inheritance</h3>
+      <ul class="list-disc pl-6 space-y-1">
+        <li>Drafting and registering wills</li>
+        <li>Legal heir certificates</li>
+        <li>Estate administration</li>
+        <li>Contesting a will in court</li>
+      </ul>
+
+      <h2 class="text-2xl font-semibold mt-10 mb-4">How to Choose the Best Lawyer Near You</h2>
+      <ul class="list-disc pl-6 space-y-1">
+        <li>✅ Check Experience and Specialization</li>
+        <li>✅ Verify Credentials</li>
+        <li>✅ Location Matters</li>
+        <li>✅ Client Reviews</li>
+      </ul>
+
+      <h2 class="text-2xl font-semibold mt-10 mb-4">Top Courts in Delhi Where Lawyers Practice</h2>
+      <ul class="list-disc pl-6 space-y-1">
+        <li>Supreme Court of India</li>
+        <li>Delhi High Court</li>
+        <li>District Courts (Tis Hazari, Saket, Patiala House, Karkardooma, Dwarka, Rohini)</li>
+        <li>Family Courts and Labour Courts</li>
+        <li>Consumer Forums</li>
+        <li>Debt Recovery Tribunals (DRT)</li>
+        <li>Real Estate Regulatory Authority (RERA)</li>
+        <li>National Company Law Tribunal (NCLT)</li>
+      </ul>
+
+      <h2 class="text-2xl font-semibold mt-10 mb-4">Why Clients Choose Us</h2>
+      <ul class="list-disc pl-6 space-y-1">
+        <li>✅ Verified and experienced lawyers</li>
+        <li>✅ Available for online/offline consultation</li>
+        <li>✅ Transparent legal fees</li>
+        <li>✅ Quick response time</li>
+        <li>✅ Confidential and secure communication</li>
+        <li>✅ Wide coverage: South Delhi, North Delhi, NCR, Gurugram, Noida</li>
+      </ul>
+
+      <h2 class="text-2xl font-semibold mt-10 mb-4">Frequently Asked Questions</h2>
+      <p>❓ <strong>How do I find a criminal lawyer near me in Delhi?</strong><br>Use our platform to filter lawyers by specialization and location. You can search for “criminal lawyer near me” and select from verified professionals based on ratings and reviews.</p>
+      <p>❓ <strong>What is the cost of hiring a divorce lawyer in Delhi?</strong><br>The cost depends on the nature of your case—mutual consent divorce is usually less expensive than a contested one. Consult a lawyer for a custom quote.</p>
+      <p>❓ <strong>Can I book a lawyer for online consultation?</strong><br>Yes. Many lawyers now offer virtual meetings via Zoom or Google Meet for initial consultation or case updates.</p>
+      <p>❓ <strong>Is my information kept private?</strong><br>Absolutely. All consultations are confidential, and your data is never shared without consent.</p>
+
+      <h2 class="text-2xl font-semibold mt-10 mb-4">Contact Us</h2>
+      <p>Need help finding a lawyer near you?<br>
+      📞 Call: +91-8210196040<br>
+      📧 Email: info@advrubygupta.in<br>
+      🕘 Timings: Mon–Sat, 9:00 AM – 7:00 PM</p>
+    </section>
+  `
+},
+
 
 };
 

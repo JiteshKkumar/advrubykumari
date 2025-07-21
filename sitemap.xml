@@ -11,14 +11,58 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://advrubygupta.in/Contactus</loc>
+    <loc>https://advrubygupta.in/contact-us</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://advrubygupta.in/blog</loc>
+    <loc>https://advrubygupta.in/about-us</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
-  <!-- Add more URLs as needed -->
+  <url>
+    <loc>https://advrubygupta.in/services/family-law</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+   <url>
+    <loc>https://advrubygupta.in/services/criminal-defense</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+   <url>
+    <loc>https://advrubygupta.in/services/corporate-law</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+   <url>
+    <loc>https://advrubygupta.in/services/civil-litigation</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://advrubygupta.in/blog/the-legality-of-live-in-relationships-in-india-what-you-need-to-know-in-2025</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+   <url>
+    <loc>https://advrubygupta.in/blog/lawyers-in-delhi</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+   <url>
+    <loc>https://advrubygupta.in/blog/lawyers-near-me-delhi-noida</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+   <url>
+    <loc>https://advrubygupta.in/blog/divorce-lawyers-near-me-delhi-noida</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+   <url>
+    <loc>https://advrubygupta.in/blog/corporate-lawyer-near-me-delhi-noida</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
 </urlset>

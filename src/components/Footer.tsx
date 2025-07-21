@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { Phone, Mail, MapPin, Facebook, Twitter, Linkedin, Scale, Instagram } from 'lucide-react';
 
 const Footer = () => {
@@ -13,9 +14,9 @@ const Footer = () => {
               <span className="ml-2 text-xl font-bold">Adv. Ruby Kumari</span>
             </div>
             <p className="text-gray-400">
-            Providing outstanding legal services with integrity and commitment since 2021. 
-            <br></br> 
-            Dedicated to achieving the best outcomes for our clients through expertise and professionalism.
+              Providing outstanding legal services with integrity and commitment since 2021. 
+              <br /> 
+              Dedicated to achieving the best outcomes for our clients through expertise and professionalism.
             </p>
           </div>
 
@@ -29,7 +30,7 @@ const Footer = () => {
               </div>
               <div className="flex items-center">
                 <Mail className="h-5 w-5 text-blue-400 mr-2" />
-                <span>advrubykumari@gmailcom</span>
+                <span>advrubykumari@gmail.com</span>
               </div>
               <div className="flex items-center">
                 <MapPin className="h-5 w-5 text-blue-400 mr-2" />
@@ -42,10 +43,42 @@ const Footer = () => {
           <div>
             <h3 className="text-lg font-semibold mb-4">Practice Areas</h3>
             <ul className="space-y-2">
-              <li><a href="/practice/corporate" className="text-gray-400 hover:text-white">Corporate Law</a></li>
-              <li><a href="/practice/family" className="text-gray-400 hover:text-white">Family Law</a></li>
-              <li><a href="/practice/criminal" className="text-gray-400 hover:text-white">Criminal Defense</a></li>
-              <li><a href="/practice/real-estate" className="text-gray-400 hover:text-white">Real Estate Law</a></li>
+              <li>
+                <Link
+                  to="/services/corporate-law"
+                  className="text-gray-400 hover:text-white"
+                  onClick={() => window.scrollTo(0, 0)}
+                >
+                  Corporate Law
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="/services/family-law"
+                  className="text-gray-400 hover:text-white"
+                  onClick={() => window.scrollTo(0, 0)}
+                >
+                  Family Law
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="/services/criminal-defense"
+                  className="text-gray-400 hover:text-white"
+                  onClick={() => window.scrollTo(0, 0)}
+                >
+                  Criminal Defense
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="/services/civil-litigation"
+                  className="text-gray-400 hover:text-white"
+                  onClick={() => window.scrollTo(0, 0)}
+                >
+                  Civil Litigation
+                </Link>
+              </li>
             </ul>
           </div>
 
@@ -53,16 +86,16 @@ const Footer = () => {
           <div>
             <h3 className="text-lg font-semibold mb-4">Follow Us</h3>
             <div className="flex space-x-4">
-            <a href="https://www.linkedin.com/in/adv-ruby-kumari-4229681a0/" className="text-gray-400 hover:text-white">
+              <a href="https://www.linkedin.com/in/adv-ruby-kumari-4229681a0/" className="text-gray-400 hover:text-white" target="_blank" rel="noopener noreferrer">
                 <Linkedin className="h-6 w-6" />
               </a>
-              <a href="#" className="text-gray-400 hover:text-white">
+              <a href="#" className="text-gray-400 hover:text-white" target="_blank" rel="noopener noreferrer">
                 <Facebook className="h-6 w-6" />
               </a>
-              <a href="#" className="text-gray-400 hover:text-white">
+              <a href="#" className="text-gray-400 hover:text-white" target="_blank" rel="noopener noreferrer">
                 <Twitter className="h-6 w-6" />
               </a>
-              <a href="#" className="text-gray-400 hover:text-white">
+              <a href="#" className="text-gray-400 hover:text-white" target="_blank" rel="noopener noreferrer">
                 <Instagram className="h-6 w-6" />
               </a>
             </div>
@@ -72,9 +105,13 @@ const Footer = () => {
         <div className="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
           <p>&copy; {new Date().getFullYear()} JK Creative Solution. All rights reserved.</p>
           <div className="mt-2">
-            <a href="/PrivacyPolicy" className="hover:text-white">Privacy Policy</a>
+            <Link to="/PrivacyPolicy" className="hover:text-white" onClick={() => window.scrollTo(0, 0)}>
+              Privacy Policy
+            </Link>
             <span className="mx-2">|</span>
-            <a href="/terms" className="hover:text-white">Terms of Service</a>
+            <Link to="/terms" className="hover:text-white" onClick={() => window.scrollTo(0, 0)}>
+              Terms of Service
+            </Link>
           </div>
         </div>
       </div>

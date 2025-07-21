@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Scale, ChevronRight, X, Building2, Gavel, Users, Briefcase, BookOpen, Award, Star, MapPin } from 'lucide-react';
+import { Helmet } from 'react-helmet-async';
 
 // Dummy components for routing
 import ContactUs from './components/ContactUs';  // Ensure to create these components as separate pages
@@ -62,13 +63,25 @@ function App() {
     { number: '3+', text: 'Years of Experience' },
     { number: '500+', text: 'Cases Won' },
     { number: '95%', text: 'Success Rate' },
-    { number: '100+', text: 'Happy Clients' },
+    { number: '1000+', text: 'Happy Clients' },
   ];
 
   return (
 
         
       <div className="min-h-screen flex flex-col">
+
+       <Helmet>
+        <title>Advocate Ruby Kumari | Top Lawyer in Delhi | Family, Criminal & Corporate Law</title>
+        <meta name="description" content="Advocate Ruby Kumari, Delhi's trusted legal expert specializing in Family Law, Criminal Defense, and Corporate Law. Over 3 years of experience with 500+ cases won." />
+        <meta name="keywords" content="Best Advocate in Delhi, Advocate in Delhi, Family Lawyer Delhi, Criminal Defense Lawyer, Corporate Law Expert, Divorce Lawyer Saket Court" />
+        <meta name="author" content="Advocate Ruby Kumari" />
+        <meta property="og:title" content="Advocate Ruby Kumari - Delhi's Leading Lawyer for Family, Criminal, Corporate Cases" />
+        <meta property="og:description" content="Expert legal services in Family Law, Criminal Defense, Corporate Compliance, and Civil Litigation. Trusted by 1000+ clients in Delhi." />
+        <meta property="og:image" content={advocate} />
+        <meta property="og:url" content="https://advrubygupta.in/" />
+        <meta name="twitter:card" content="summary_large_image" />
+      </Helmet>
         
         {/* Disclaimer Popup */}
         {showDisclaimer && (
